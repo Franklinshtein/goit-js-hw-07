@@ -24,7 +24,7 @@ gallery.innerHTML = createGalleryMarkup(galleryItems);
 gallery.addEventListener("click", (event) => {
   event.preventDefault(); // відміна поведінки за замовчуванням
 
-  const { nodeName, dataset: { source } = {} } = event.target;
+  const { nodeName, dataset: { source } = {} } = event.target; // значення атрибуту data-source
 
   // перевірка чи клік був на зображенні
   if (nodeName !== "IMG" || !source) return;

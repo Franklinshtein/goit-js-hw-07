@@ -21,6 +21,7 @@ const createGalleryMarkup = (items) =>
 // додавання створеної розмітки до галереї
 gallery.innerHTML = createGalleryMarkup(galleryItems);
 
+//підключення simpleLightbox з готової бібліотеки
 new SimpleLightbox(".gallery a", {
   caption: true,
   captionsData: "alt",
